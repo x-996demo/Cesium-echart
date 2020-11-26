@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.boxxxxx {
+  color: white;
+  display: flex;
+  padding-left: 15px;
+  padding-top: 5px;
+  background: url("../img/bg66.png") no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 144px;
+  height: 97px;
+  text-align: center;
+}
+
+#cesiumContainer {
+  width: 100%;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+  background-color: #014a91;
+}
+
+.cesium-viewer-bottom {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

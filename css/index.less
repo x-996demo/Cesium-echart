@@ -1,0 +1,1104 @@
+// css初始化
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// html {
+//     
+// }position: relative;
+body{
+    position: relative;
+    // width: 3200px;
+    // height: 1080px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(../images/bg-image.jpg) no-repeat 0 0/cover; 
+}
+.top {
+    position: absolute;
+    width: 3200px;
+    height: 130px;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    background: url(../images/title01_nolight.png) no-repeat 0 0/cover;
+}
+//加入天气
+.weatherone {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    white-space:nowrap;
+     overflow:hidden;
+    text-overflow:ellipsis;
+    text-align: right;
+    // border: 1px solid red;
+    right: 1003px;
+    top: 40px;
+}
+//加入图标
+.box1 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 950px;
+        top: 30px;
+    // border: 1px solid red;
+    img{
+        
+        width: 45px;
+        height: 45px;
+    }
+}
+//加入温度
+.wendu {
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    right: 680px;
+    top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    // border: 1px solid red;
+    .du {
+        margin-left: 15px;
+    }
+}
+//加入风向
+.wind {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    right: 520px;
+    top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    // border: 1px solid red;
+}
+// 加入时间
+.showTime {
+    position: absolute;
+    right: 333px;
+    top: 40px;
+    font-size: 22px;
+    color: #ffffff;
+}
+.showtime {
+    position: absolute;
+    right: 202px;
+    top: 43px;
+    font-size: 19px;
+    color: #ffffff;
+}
+// 第一模块------------------------------------------------------
+.contentone {
+    position: absolute;
+    width: 586px;
+    height: 314px;
+    left:  40px;
+    top:  45px;
+    box-sizing: border-box;
+    /* border: 1px solid red solid red; */
+    /* 年度预警 */
+    .a-num {
+        position: absolute;
+        // height: 20px;
+        color: #feb607;
+        font-size: 24px;
+        left: 30px;
+    }
+    .warnyear {
+        position: relative;
+        width: 288px;
+        height: 313px;
+        float: left;        
+        background: url(../images/box02.png);
+        .wytit {
+            position: absolute;
+            color: #e9eeff;
+            font-size: 17px;
+            left: 25px;
+            top: 20px;
+        }
+        .wybox {
+            position: absolute;
+            left: 25px;
+            top:60px;
+            width: 175px;
+            height: 64px;
+            border-radius: 5px;
+            border: 2px solid #05579c;
+            .wybox-left {
+                position: absolute;
+                width: 90px;
+                height: 42px;
+                top: 13px;
+                border-right: 2px dashed #00509a;
+                .year-a {
+                    color: #feb607;
+                    // font-size: 15px;
+                    text-align: center;
+                    // margin-top: 10px;
+                }
+            }
+           .wybox-right {
+               position: absolute;
+               width: 81px;
+                height: 42px;
+                left: 91px;
+                top: 13px;
+                // border: 1px solid red;
+                .b-num {
+                    position: absolute;
+                    left: 20px;
+                    font-size:24px;
+                    
+                    color: #07a3cc;
+                }
+                .year-b{
+                    font-size: 15px;
+                    text-align: center;
+                    color: #07a3cc;
+                }
+           } 
+        }
+        .wy-drop {
+            position: absolute;
+            height: 49px;
+            width: 72px;
+            top: 65px;
+            left: 200px;
+            color:#04da7b ;
+            text-align: center;
+            background: linear-gradient(to right,#07589d,#012753);
+            // border: 1px solid red;
+           :nth-child(1){
+               font-size: 12px;
+               margin-top: 8px;
+           }
+           :nth-child(2){
+            font-size: 17px;
+        }
+        }
+        .wy-echbing {
+            position: absolute;
+            width: 288px;
+            height: 180px;
+            top: 130px;
+            // border: 1px solid red;
+        }
+      }
+    /* 当月预警 */
+    .warnmonth{
+        position: relative;
+        width: 287px;
+        height: 313px;
+        float: right;
+        background: url(../images/box03.png);
+        /* border: 1px solid red solid red; */
+        .wmtit {
+            position: absolute;
+            color: #e9eeff;
+            font-size: 17px;
+            left: 25px;
+            top: 20px;
+        }
+        .wm-drop {
+            position: absolute;
+            width: 123px;
+            height: 32px;
+            left: 25px;
+            top: 48px;
+            background: linear-gradient(#012552,#054987);
+            // border: 1px solid red;
+            :nth-child(1){
+                font-size: 12px;
+                color:#fd6549;
+                margin-left: 5px;
+            }
+            :nth-child(2){
+                font-size: 18px;
+                color: #fd6549;
+            }
+        }
+        .wm-down {
+            position: absolute;
+            width: 123px;
+            height: 32px;
+            left: 150px;
+            top: 48px;
+            background: linear-gradient(#012552,#054987);
+            // border: 1px solid red;
+            :nth-child(1){
+                font-size: 12px;
+                color:#01f779;
+                margin-left: 5px;
+            }
+            :nth-child(2){
+                font-size: 18px;
+                color: #01f779;
+            }
+        }
+        .wmbox {
+            position: absolute;
+            left: 14px;
+            top:80px;
+            width: 261px;
+            height: 52px;
+            border-radius: 5px;
+            border: 2px solid #05579c;
+            .wmbox-left {
+                position: absolute;
+                width: 90px;
+                height: 40px;
+                top: 5px;
+                // border: 1px solid red;
+                border-right: 2px dashed #00509a;
+                .c-num {
+                    // height: 20px;
+                    font-size:24px;
+                    top: 0px;
+                }
+                p {
+                    color: #0cc574;
+                    font-size: 14px;
+                    text-align: center;
+                    // margin-top: 10px;
+                }
+            }
+           .wmbox-middle {
+               position: absolute;
+               width: 86px;
+                height: 40px;
+                left: 90px;
+                top: 5px;
+                // border: 1px solid red;
+                border-right: 2px dashed #00509a;
+                .d-num {
+                    // height: 20px;
+                    font-size:24px;
+                    top: 0px;
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                    color: #d39a29;
+                }
+           } 
+           .wmbox-right {
+            position: absolute;
+            width: 86px;
+             height: 40px;
+             left: 175px;
+             top: 5px;
+            //  border: 1px solid red;
+            .e-num {
+                // height: 20px;
+                font-size:24px;
+                top: 0px;
+            }
+             p{
+                 font-size: 14px;
+                 text-align: center;
+                 color: #08c8f0;
+             }
+        } 
+        }
+        .wm-echbing {
+            position: absolute;
+            width: 288px;
+            height: 170px;
+            top: 132px;
+            // border: 1px solid red;
+        }
+      }
+      .cileone {
+          position: absolute;
+          color: #feb607;
+          left: 76px;
+          top: 98px;
+          font-size: 20px;
+      }
+      .ciletwo {
+        position: absolute;
+        color: #07a3cc;
+        left: 170px;
+        top: 98px;
+        font-size: 20px;
+      }
+      .cilethree {
+        position: absolute;
+        color:  #0cc574;
+        left: 370px;
+        top: 105px;
+        font-size: 20px;
+      }
+      .cilefour {
+        position: absolute;
+        color:  #feb607;
+        left: 460px;
+        top: 105px;
+        font-size: 20px;
+      }
+      .cilefive {
+        position: absolute;
+        color:  #08c8f0;
+        left: 545px;
+        top: 105px;
+        font-size: 20px;
+      }
+  }
+// 第二模块-------------------------------------------------------
+     .contentwo {
+         position: absolute;
+         width: 586px;
+         height: 223px;
+         left: 40px;
+         top: 369px;
+        //  border: 1px solid red solid red;
+        //  今日旗县预警统计
+        .warntodaytotal {
+            width: 286px;
+            height: 223px;
+            float: left;
+            background: url(../images/box04.png);
+            .wty-tit {
+                position: absolute;
+                color: #e9eeff;
+                font-size: 17px;
+                left: 11px;
+                top: 12px;
+            }
+            .wty-echbing {
+                position: absolute;
+                width: 284px;
+                height: 188px;
+                top: 32px;
+                // border: 1px solid red;
+            }
+        }
+        // 今日预警
+        .warntoday {
+            position: relative;
+            width: 287px;
+            height: 223px;
+            float: right;
+            background: url(../images/box05.png);
+            .wt-tit {
+                position: absolute;
+                color: #e9eeff;
+                font-size: 17px;
+                left: 11px;
+                top: 12px;
+            }
+            .wt-icon {
+                position: absolute;
+                width: 40px;
+                height: 38px;
+                left: 164px;
+                top: 9px;
+                // background-size: 100% 100%;
+                // background-attachment: fixed;
+                // background: url(../images/icon_yujing02.png);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .wt-num {
+                position: absolute;
+                left: 213px;
+                top: 20px;
+                width: 60px;
+                height: 27px;
+                text-align: center;
+                // border: 1px solid red;
+                :nth-child(1){
+                    font-size: 23px;
+                    color: #08c8f0;
+                }
+                :nth-child(2){
+                    font-size: 12px;
+                    margin-left: 5px;
+                    color: #ffffff;
+                }
+            }
+            .wty-echart {
+                position: absolute;
+                width: 285px ;
+                height: 163px;
+                top: 50px;
+                // border: 1px solid red;
+            }
+        }
+     }
+    //  今日预警增加的
+    .todayadd {
+        position: absolute;
+        width: 30px;
+        height: 80px;
+        left: 575px;
+        top: 458px;
+        font-size: 18px;
+        // border: 1px solid red;
+        .addimm {
+            color: #d83924;
+        }
+        .addready {
+            // color: #feb605;
+            // color: #48b054;
+            color: #feb605;
+            margin-top: 5px;
+        }
+        .addresponse {
+            // color: #feb605;
+            margin-top: 5px;
+            color: #48b054;
+        }
+
+    }
+    .todayaddtext {
+        position: absolute;
+        width: 30px;
+        height: 80px;
+        left: 605px;
+        top: 458px;
+        color: #ffffff;
+        font-size: 8px;
+        .addreadytext {
+            margin-top: 15px;
+        }
+        .addresponsetext {
+            margin-top: 15px;
+        }
+    }
+ //第三模块-----------------------------------------------------------
+         .contenthree {
+             position: absolute;
+             width: 583px;
+             height: 231px;
+             top: 602px;
+             left: 40px;
+             background: url(../images/box06.png);
+             .winfo {
+                 position: absolute;
+                 top: 6px;
+                 left: 23px;
+                 font-size: 17px;
+                 color: #e0e5f8;
+             }
+             .marquee-view {
+                 position: absolute;
+                 width: 547px;
+                 height: 185px;
+                 left: 16px;
+                 top: 36px;
+                 overflow: hidden;
+                //  border: 1px solid red;
+                 .marquee {
+                    animation: scroll-top 20s linear infinite;
+                    &:hover {
+                     /* 播放状态  running 播放  paused 暂停 */
+                         animation-play-state: paused;
+                        
+                    }
+                    .row {
+                font-size: 16px;
+                 color: #ffffff;
+                margin-left: 19px;
+                 margin-top: 15px;
+                 
+                 .warn{
+                    color: #f2af15;
+                 }
+                 .red{
+                    color: red;
+                 }
+                 .white {
+                     color:#ffffff;
+                 }
+                    }
+                 }
+             }
+         }
+         @keyframes scroll-top {
+            0%{}
+            100%{
+              transform: translateY(-50%);
+            }
+          }   
+ //第四模块---------------------------------------------------------
+       .contentfour {
+        position: absolute;
+        width: 586px;
+        height: 226px;
+        top: 843px;
+        left: 40px;
+        // border: 1px solid red solid red;
+        .warnmonthLD {
+            position: relative;
+            width: 286px;
+            height: 223px;
+            background: url(../images/box07.png);
+            float: left;
+            .wmLD {
+                position: absolute;
+                left: 11px;
+                top: 10px;
+                color: #ffffff;
+            }
+            .LD-echart {
+                position: absolute;
+                width: 284px;
+                height: 180px;
+                top: 44px;
+                // border: 1px solid red;
+            }
+        }
+        .warntodayLD {
+            position: relative;
+            width: 286px;
+            height: 223px;
+            background: url(../images/8.png);
+            float: right;
+            .wtLD {
+                position: absolute;
+                left: 11px;
+                top: 10px;
+                color: #ffffff;
+            }
+            .LD-echarttwo {
+                position: absolute;
+                width: 284px;
+                height: 180px;
+                top: 44px;
+                // border: 1px solid red;
+            }
+        }
+       }  
+//第五板块--------------------------------------------------------
+.contentfive {
+    position: absolute;
+    width: 292px;
+    height: 585px;
+    // border: 1px solid red solid red;
+    left: 640px;
+    bottom: 409px;
+    background: url(../images/box09_2nolight.png);
+    .logo {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        left: 52px;
+        top: 17px;
+        background: url(../images/icon_raincenter.png);
+    }
+    .raintit {
+        position: absolute;
+        left: 107px;
+        top: 20px;
+        color: #ffffff;
+        font-size: 26px;
+    }
+    .raintime {
+        position: absolute;
+        left: 66px;
+        top: 90px;
+        font-size: 18px;
+        color: #ffffff;
+        :nth-child(2){
+            font-size: 25px;
+            color: #08c8f2;
+        }
+        :nth-child(3){
+            font-size: 15px;
+            
+        }
+    }
+    .location {
+        position: absolute;
+        left: 27px;
+        width: 23px;
+        height: 30px;
+        top: 120px;
+        background: url(../images/icon_location.png);
+    }
+    .locationname {
+        position: absolute;
+        left: 66px;
+        top: 125px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .riverlogo {
+        position: absolute;
+        left: 25px;
+        top: 180px;
+        width: 38px;
+        height: 33px;
+        background: url(../images/icon_rivercourse.png);
+    }
+    .river-today {
+        position: absolute;
+        left: 65px;
+        top: 180px;
+        color: #ffffff;
+        font-size: 20px;
+        span {
+            color: #3d9a52;
+            font-size: 16px;
+        }
+    }
+    .rivertotal {
+        position: absolute;
+        width: 265px;
+        height: 350px;
+        left: 15px;
+        top: 250px;
+        // border: 1px solid red;
+        .riverlistnoe {
+            height: 70px;
+            // border: 1px solid blue;
+            border-bottom: 2px dashed #04478b;
+            .listname {
+                float: left;
+                margin-top: 25px;
+                font-size: 20px;
+                color: #c69033;
+                width: 90px;
+                // border: 1px solid red;
+                text-align-last: justify;
+                  text-align: justify; 
+            }
+            .listnum {
+                margin-top: 10px;
+                float: left;
+                margin-left: 8px;
+                .water {
+                    span {
+                        
+                        text-align: center;
+                        font-size: 10px;
+                        color: #ffffff;
+                    }
+                    :nth-child(2) {
+                        margin-left: 5px;
+                        font-weight: 700;
+                        color: #09c7f0;
+                        font-size: 22px;
+                    }
+                    :nth-child(3) {
+                        position: absolute;
+                        right: 18px;
+                        padding-top: 10px;
+                        
+                    }
+                }
+                .flow {
+                    span {
+                      position: relative;
+                        font-weight: 700;
+                        font-size: 10px;
+                        color: #ffffff;
+                    }
+                    :nth-child(2) {
+                        margin-left: 5px;
+                        color: #09c7f0;
+                        font-size: 22px;
+                    }
+                    :nth-child(3) {
+                        position: absolute;
+                        right: 0px;
+                        padding-top: 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+//第六板块-------------------------------------------------------
+.contentsix {
+    position: absolute;
+    width: 290px;
+    height: 280px;
+    left: 655px;
+    bottom: 66px;
+    // border: 1px solid red;
+  
+}
+// 新增站点总数定位
+.increase {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    left: 870px;
+    bottom: 325px;
+    // border: 1px solid red;
+    .square {
+
+        margin-top: 3px;
+        width: 12px;
+        height: 12px;
+        background: #08c8f0;
+    }
+    .inicreasenum {
+        position: absolute;
+        left: 18px;
+        top: 0px;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    
+    
+}
+.increase-text {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    color: #ffffff;
+    bottom: 200px;
+    left: 920px;
+    p {
+        margin-top: 15px;
+    }
+}
+.increase-num {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    color: #05caf0;
+    bottom: 200px;
+    left: 880px;
+    p {
+        margin-top: 15px;
+        width: 30px;
+    }
+}
+//第七板块----------------------------------------------------------
+.contentseven {
+    position: absolute;
+    width: 1246px;
+    height: 628px;
+    right: 33px;
+    top:88px ;
+    background: url(../images/box10_nolight.png);
+    // border: 1px solid red solid red;
+    .video {
+        position: absolute;
+        width: 1000px;
+        height: 600px;
+        left: 26px;
+        top: 15px;
+        // border: 1px solid red;
+    }
+}
+//第八板块------------------------------------------------------
+.contenteight {
+    position: absolute;
+    right: 965px;
+    width: 314px;
+    height: 337px;
+    bottom: 20px;
+    background: url(../images/box11_2.png);
+    // border: 1px solid red solid red;
+    .toinfos {
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+    .toprence {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        font-size: 16px;
+        color: #ffffff;
+        span {
+            margin-right: 5px;
+        }
+    }
+    .content {
+        position: absolute;
+        top: 40px;
+        width: 314px;
+        flex: 1;
+        .head {
+            background: rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            padding: 12px 15px 12px 19px;
+            color: #828eaf;
+            display: flex;
+            justify-content: space-between;
+            line-height: 1.05;
+            :nth-child(2){
+                width: 50px;
+                text-align: center;
+            }
+            :nth-child(3){
+                width: 30px;
+                text-align: center;
+            }
+            :nth-child(4){
+                width: 30px;
+                text-align: center;
+            }
+            :nth-child(5){
+                width: 30px;
+                text-align: center;
+            }
+            :nth-child(6){
+                width: 30px;
+                text-align: center;
+            }
+        }
+        .marquee-view {  
+            bottom: 0; 
+            width: 100%;
+            height: 256px; 
+            overflow: hidden;
+            .marquee {
+                animation: scroll-top 15s linear infinite;
+                &:hover{
+                    /* 播放状态  running 播放  paused 暂停 */
+                animation-play-state: paused;
+                }
+            }
+            .row {
+                line-height: 1.05;
+                padding: 12px 15px 12px 19px;
+                // color: #61a8ff;
+                font-size: 8px;
+                display: flex;
+                justify-content: space-between;
+                :nth-child(1){
+                    color: #ffffff;
+                    width: 50px;
+                }
+                :nth-child(2){
+                    color: #49a798;
+                    margin-left: 12px;
+                    width: 90px;
+                }
+                :nth-child(3){
+                    color: #409a57;
+                    margin-left: 15px;
+                    width: 111px;
+                }
+                :nth-child(4){
+                    color:#fb9c15;
+                    width: 70px;
+                }
+                :nth-child(5){
+                    color: #a2b93e;
+                    width: 80px;
+                }
+                :nth-child(6){
+                    color: #be8d3e;
+                }
+            }
+        }
+    }
+}
+//第九板块-------------------------------------------------------
+.contentnine {
+    position: absolute;
+    right: 621px;
+    width: 333px;
+    height: 337px;
+    bottom: 20px;
+    background: url(../images/box12.png);
+    .timerain{
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .maxrain {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        font-size: 16px;
+        color: #ffffff;
+        :nth-child(1){
+            display: inline-block;
+           width: 10px;
+           height: 20px; 
+           margin-right: 5px;
+           background-color: #46bdfa;
+        }
+        :nth-child(2){
+            margin-right: 18px;
+        }
+    }
+    .rain-echart {
+        position: absolute;
+        top: 50px;
+        height: 280px;
+        width: 331px;
+        // border: 1px solid red;
+    }
+}
+//第十板块-----------------------------------
+ .contenttten {
+   position: absolute;
+   right: 301px;
+   width: 313px;
+   height: 337px;
+   bottom: 20px;
+   background: url(../images/box13_2.png);
+   .rainadopt {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 18px;
+   }
+   .rainmm {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    font-size: 10px;
+    color: #ffffff;
+    // span {
+    //     margin-right: 3px;
+    // }
+   }
+   .raintime {
+       position: absolute;
+       left: 110px;
+       top: 18px;
+       font-size: 1px;
+       color:#44ae57;
+   }
+   .content {
+    position: absolute;
+    top: 40px;
+    width: 314px;
+    flex: 1;
+    .head {
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 13px;
+        padding: 12px 15px 12px 19px;
+        color: #828eaf;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.05;
+    }
+    .marquee-view {  
+        bottom: 0; 
+        width: 100%;
+        height: 256px; 
+        overflow: hidden;
+        .marquee {
+            animation: scroll-top 80s linear infinite;
+            &:hover{
+                /* 播放状态  running 播放  paused 暂停 */
+            animation-play-state: paused;
+            }
+        }
+        .row {
+            line-height: 1.05;
+            padding: 12px 15px 12px 19px;
+            // color: #61a8ff;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            :nth-child(1){
+                color: #ffffff;
+                width: 40px;
+                // text-align: center;
+            }
+            :nth-child(2){
+                color: #49a798;
+                width: 60px;
+                // text-align: center;
+            }
+            :nth-child(3){
+                color: #409a57;
+                width: 40px;
+                text-align: center;
+            }
+            :nth-child(4){
+                color:#a1b93a;
+                width: 100px;
+                text-align: center;
+            }
+            :nth-child(5){
+                color: #dc9f30;
+                width: 50px;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+ }
+//第十一板块------------------------------------------------------
+.contentele {
+    position: absolute;
+    right: 28px;
+    width: 257px;
+    height: 164px;
+    bottom: 192px;
+    background: url(../images/box14.png);
+    .riverwarn {
+        position: absolute;
+        left: 24px;
+        top: 10px;
+        color: #ffffff;
+        font-size: 17px;
+       
+    }
+    // .morewarn {
+    //     position: absolute;
+    //     top: 43px;
+    //     width: 257px;
+    //     height: 120px;
+    //     // border: 1px solid red;
+    // }
+    .morewarnone {
+        position: absolute;
+        top: 43px;
+        width: 257px;
+        height: 60px;
+        // border: 1px solid red;
+    }
+    .morewarntwo {
+        position: absolute;
+        top: 103px;
+        width: 257px;
+        height: 60px;
+        // border: 1px solid red;
+    }
+}
+//第十二板块------------------------------------------------
+.contenttwe {
+    position: absolute;
+    right: 28px;
+    width: 258px;
+    height: 165px;
+    bottom: 20px;
+    background: url(../images/box14.png);
+    .waterarea {
+        position: absolute;
+        left: 24px;
+        top: 10px;
+        color: #ffffff;
+        font-size: 17px;
+    }
+    .water-echart {
+        position: absolute;
+        top: 42px;
+        height: 120px;
+        width: 256px;
+        // border: 1px solid red;
+    }
+}
